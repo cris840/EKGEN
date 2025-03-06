@@ -664,7 +664,7 @@ if __name__ == '__main__':
             try:
                 logging.info(f'------------ Initializing of {i+1} start ------------')
                 console_log(f'\n{Fore.MAGENTA}------------ Initializing of {Fore.YELLOW}{i+1} {Fore.MAGENTA}start ------------{Fore.RESET}\n', silent_mode=SILENT_MODE)
-                if i == 0: # the first run sets up the environment for subsequent runs, speeding them up
+                if i == 0: # the first run sets up the environment for subsequent runs, speeding them up.
                     main(disable_exit=True)
                     args['skip_update_check'] = True
                     args['skip_webdriver_menu'] = True
