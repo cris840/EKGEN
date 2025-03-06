@@ -20,7 +20,7 @@ def enable_logging():
         format='%(asctime)s - %(levelname)s - %(message)s'
     )
 
-if ('--disable-logging' not in sys.argv and not MBCI_MODE) or ('--disable-logging' in sys.argv and SILENT_MODE): # Here it is present to catch an error when parsing arguments using argparse
+if ('--disable-logging' not in sys.argv and not MBCI_MODE) or ('--disable-logging' in sys.argv and SILENT_MODE): # Here it is present to catch an error when parsing arguments using argparse.
     enable_logging()
 
 from modules.EmailAPIs import *
