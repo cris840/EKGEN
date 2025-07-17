@@ -2,11 +2,11 @@
 
   <img src="https://github.com/rzc0d3r/ESET-KeyGen/blob/main/img/logo_alt.png?raw=true" alt="logo"/>
     
-  ![Version](https://img.shields.io/badge/version-1.5.4.4-gold)
+  ![Version](https://img.shields.io/badge/version-1.5.5.7-gold)
   
   [![Commit activity](https://img.shields.io/github/commit-activity/t/rzc0d3r/ESET-KeyGen/main?cacheSeconds=0)](https://github.com/rzc0d3r/ESET-KeyGen/commits/main)
   ![Last commit](https://img.shields.io/github/last-commit/rzc0d3r/ESET-KeyGen/main?cacheSeconds=0)
-  ![Last test](https://img.shields.io/badge/last_test-01.07.2025_15:46_UTC+3-blue)
+  ![Last test](https://img.shields.io/badge/last_test-15.07.2025_15:47_UTC+3-blue)
   [![Opened issues](https://img.shields.io/github/issues/rzc0d3r/ESET-KeyGen?color=darkred)](https://github.com/rzc0d3r/ESET-KeyGen/issues?cacheSeconds=0)
   [![Closed issues](https://img.shields.io/github/issues-closed/rzc0d3r/ESET-KeyGen?color=darkgreen&cacheSeconds=0)](https://github.com/rzc0d3r/ESET-KeyGen/issues?q=is%3Aissue+is%3Aclosed)
   ![License](https://img.shields.io/github/license/rzc0d3r/ESET-KeyGen)
@@ -16,7 +16,7 @@ ESET-KeyGen - Trial-Key & Account generator for ESET Products
 
 ---
 
-## Disclaimer 
+## ⚠️ Disclaimer ⚠️
 ### Important: This tool is for educational purposes only.
 Using this tool may violate ESET's terms of service and could have legal implications.
 
@@ -24,30 +24,35 @@ The authors and contributors are not responsible for any misuse or damage caused
 
 Use at your own risk and only on systems you own or have explicit permission to test.
 
-</div>
+---
+## 💰 Donations 💰
+You can support this project financially by following the link [here](https://github.com/rzc0d3r/ESET-KeyGen?tab=readme-ov-file#-donations--1) 
 
 ---
-# If my page or project will be blocked, please refer to these links
-* My [public channel with archives of my projects](https://t.me/rzc0d3r_official)
+
+## Useful links
+My [public channel with archives of my projects](https://t.me/rzc0d3r_official)
+
+[ESET Antivirus free trial](https://www.eset.com/int/home/free-trial/)
+
+[ESET VPN](https://home.eset.com/download/vpn)
+</div>
 
 ---
 ## Project Status 
 - Current Status: Active development
 
 ## Known Errors
-- **Mailticking** added **cloudflare** captcha
+- **Almost all Email APIs have been blocked by ESET!!!** Recommended to use ```emailfake```, ```inboxes``` and also use the ```--custom-email-api``` argument!
+- **ESET** has removed the trial version for VPN, it is now **fully paid**. The ```--vpn-codes``` argument does not work now!
+- ```mailticking```, ```incognitomail``` added **cloudflare** captcha
 - **ACT0**, **ACT5** errors may occur during activation in some cases
 - **ecp4125** activation error has been reported by some users
 - **ESET ProtectHub** has an aggressive policy for temporary email addresses!
-
+- ~~**ESET** stopped sending emails to ```incognitomail```, it is not recommended to use this **Email API** now!~~
 ## Planned Features
 - Improved error handling/reporting
 - Support
-
----
-## Useful links to download ESET products:
-- [Antivirus free trial](https://www.eset.com/int/home/free-trial/)
-- [VPN](https://home.eset.com/download/vpn)
 
 ---
 ### Project files are detected as viruses by ESET, this is not true!
@@ -63,11 +68,11 @@ ESET -> Settings -> Advanced Setup -> Detection Engine -> Exclusions -> Detectio
 
 # Getting Started
 
-## Using GitHub Actions CI
+## 1. Using GitHub Actions CI
 You can simply use the GitHub actions workflow given [here](https://github.com/rzc0d3r/ESET-KeyGen/blob/main/.github/workflows/eset.yml) in your GitHub repo.
 
 Make a fork of my project. Go to it.
-Then goto the **Actions** tab, choose **Generator** actions and then run the workflow.
+Then goto the **Actions** tab, choose **Account and Key Generator** actions and then run the workflow.
 
 It will ask the number of accounts, keys to be generated.
 
@@ -75,7 +80,7 @@ It will ask the number of accounts, keys to be generated.
 
 ## Using your device
 
-### Prerequisites 
+### 1. Prerequisites 
  Choose one of the following supported browsers
  
 #### Google Chrome (fully supports)
@@ -105,7 +110,7 @@ Enable the ```Remote Automation``` feature by performing the following steps:
 
 ---
 
-### Installing python and libraries
+### 2. Installing python and libraries
 
 > You can skip this step if you use the compiled executable file from the release
 
@@ -119,14 +124,14 @@ pip install -r requirements.txt
 
 ---
 
-## Preparing ESET
+## 3. Preparing ESET
 Delete your current ESET HOME account
 
 ![](img/delete_eset_home_account.png)
 
 ---
 
-## How to use (Part 2)
+## 4. How to use (Part 2)
 1. [Account Generator](wiki/AccountGenerator.md)
 2. [Key Generator](wiki/KeyGenerator.md)
 3. [Reset ESET VPN](wiki/ResetEsetVPN.md)
@@ -162,5 +167,8 @@ Delete your current ESET HOME account
 
 ## Documentation
    - Help improve our documentation by submitting updates or clarifications.
+
+# 💰 Donations 💰
+* PayPal - **raze.c0d3r@gmail.com**
 
 ## This project exists in its current state thanks to all the people who have contributed and to all who create issues, which we solve together!
